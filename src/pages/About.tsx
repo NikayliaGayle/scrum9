@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonItem, IonList, 
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -10,13 +10,10 @@ const Home: React.FC = () => {
           <IonTitle>Blank</IonTitle>
         </IonToolbar>
         <IonList>
-        <IonItem routerLink="/about">
-            <IonLabel>About</IonLabel>
+          <IonItem routerLink="/home">
+            <IonLabel>Home</IonLabel>
           </IonItem>
-          <IonItem routerLink="/Products">
-            <IonLabel>Products</IonLabel>
-          </IonItem>
-          </IonList>
+        </IonList>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
@@ -24,11 +21,13 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <h1> Welcome </h1>
+        <h1> Nikaylia Gayle </h1>
+        <h2> Turing Team</h2>
+        <img src="src/pictures/NCB Narrative Pic.jpg" height="400" width="auto"></img>
         <p> This is my attempt at using Ionic</p>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default About;
